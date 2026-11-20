@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Salud Perú | Seguimiento personal</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-mark">+</span><span>Salud Perú</span></div><button class="login">Ingresar</button></header>
+<main>
+<section class="hero"><div><p class="eyebrow">Orientación y seguimiento</p><h1>Entiende tu evolución diaria.</h1><p class="lead">Registra cómo te sientes, observa tus cambios y recibe orientación general basada en información médica revisada.</p><button class="primary" onclick="document.querySelector('#registro').scrollIntoView({behavior:'smooth'})">Registrar hoy</button></div><div class="hero-card"><span class="pulse">♥</span><p>Tu salud, organizada</p><strong>Privada · Clara · Responsable</strong></div></section>
+<section id="registro" class="panel"><div class="section-head"><div><p class="eyebrow">Registro diario</p><h2>¿Cómo te sientes hoy?</h2></div><span class="date">Hoy</span></div>
+<form id="health-form"><label>Temperatura (°C)<input id="temperature" type="number" min="34" max="43" step=".1" placeholder="36.8"></label><label>Síntoma principal<select id="symptom"><option>Sin síntomas</option><option>Fiebre</option><option>Dolor de cabeza</option><option>Golpe o hinchazón leve</option></select></label><label>Notas adicionales<textarea id="notes" rows="3" placeholder="Cuéntanos cómo te sientes..."></textarea></label><button class="primary" type="submit">Guardar registro</button><p id="saved" class="saved" hidden>Registro guardado en este dispositivo.</p></form></section>
+<section class="cards"><article><span class="icon">↗</span><h3>Tu evolución</h3><p>Consulta tus registros por fecha y detecta cambios.</p></article><article><span class="icon">✓</span><h3>Orientación clara</h3><p>Información general y señales para buscar atención profesional.</p></article><article><span class="icon">⌁</span><h3>Datos protegidos</h3><p>Tus datos personales se mantienen separados de las estadísticas.</p></article></section>
+<section class="notice"><strong>Importante:</strong> esta herramienta no reemplaza una evaluación médica ni emite diagnósticos. Si tienes síntomas intensos o empeoras, busca atención profesional.</section>
+</main><script src="app.js"></script>
+</body></html>
